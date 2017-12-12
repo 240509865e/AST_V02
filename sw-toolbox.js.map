@@ -1,0 +1,1034 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-1c2c316b7a17f15536c6a26ed744654fc228a24658a7ae395cdcbf8329c8406b.css" integrity="sha256-HCwxa3oX8VU2xqJu10RlT8IookZYp645XNy/gynIQGs=" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-d08d88f7c78b840d78bbae331a91ced31d41357228c951d86775ce64049f9abf.css" integrity="sha256-0I2I98eLhA14u64zGpHO0x1BNXIoyVHYZ3XOZASfmr8=" media="all" rel="stylesheet" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>sw-toolbox/sw-toolbox.js.map at master · GoogleChromeLabs/sw-toolbox</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/31970254?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="GoogleChromeLabs/sw-toolbox" property="og:title" /><meta content="https://github.com/GoogleChromeLabs/sw-toolbox" property="og:url" /><meta content="sw-toolbox - A collection of service worker tools for offlining runtime requests" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjMwMzg1NzQ4OjM1OGNlYzk4NmM2NzA4NTUyZGRlOGU2YjMxOTVkYTE2MjgxYzhhNGY0NjllZjVhMGRkMjNiMTVjNTIzY2M4ZGI=--dcbe992758e1c57e472eb6edc9c590055e8646a0">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="F053:0875:8337F4:DE6C94:5A301C98" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="F053:0875:8337F4:DE6C94:5A301C98" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="34485582" name="octolytics-actor-id" /><meta content="240509865e" name="octolytics-actor-login" /><meta content="17068a72464eea7270f61984ad3846f243cf1f4ff525c86076634cdf5f23fb26" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="240509865e">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZGMwYzQ1NWRhMzNiNzM5ZWM2ZTY3NzA4YjRmNTYxMzQ1MzhjMmE5YTgyYTJjYTFjMGY1NjA1Njc2NzczODgyZHx7InJlbW90ZV9hZGRyZXNzIjoiODkuMjM2LjIzMy43MyIsInJlcXVlc3RfaWQiOiJGMDUzOjA4NzU6ODMzN0Y0OkRFNkM5NDo1QTMwMUM5OCIsInRpbWVzdGFtcCI6MTUxMzEwMjQ5NywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS">
+
+  <meta name="html-safe-nonce" content="f4b104fcb727d258cdd331f152412008f4b9d81d">
+
+  <meta http-equiv="x-pjax-version" content="51aaa541cf7c832f1b455351a56deae5">
+  
+
+      <link href="https://github.com/GoogleChromeLabs/sw-toolbox/commits/master.atom" rel="alternate" title="Recent Commits to sw-toolbox:master" type="application/atom+xml">
+
+  <meta name="description" content="sw-toolbox - A collection of service worker tools for offlining runtime requests">
+  <meta name="go-import" content="github.com/GoogleChromeLabs/sw-toolbox git https://github.com/GoogleChromeLabs/sw-toolbox.git">
+
+  <meta content="31970254" name="octolytics-dimension-user_id" /><meta content="GoogleChromeLabs" name="octolytics-dimension-user_login" /><meta content="34268206" name="octolytics-dimension-repository_id" /><meta content="GoogleChromeLabs/sw-toolbox" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="34268206" name="octolytics-dimension-repository_network_root_id" /><meta content="GoogleChromeLabs/sw-toolbox" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/GoogleChromeLabs/sw-toolbox/blob/master/sw-toolbox.js.map" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/D7152725-AD74-E14C-8678-482F72490326/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/62309427F284-8768-C41E-47DA-5272517D/abn/main.css"/></head>
+
+  <body class="logged-in env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="bg-black text-white p-3 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+      
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex px-3 flex-justify-between container-lg">
+    <div class="d-flex flex-justify-between">
+      <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/search" class="js-site-search-form" data-scoped-search-url="/GoogleChromeLabs/sw-toolbox/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/GoogleChromeLabs/sw-toolbox/blob/master/sw-toolbox.js.map" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a href="/pulls" aria-label="Pull requests you created" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a href="/issues" aria-label="Issues you created" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+                Issues
+</a>            </li>
+                <li>
+                  <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-selected-links=" /marketplace">
+                    Marketplace
+</a>                </li>
+            <li>
+              <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg aria-hidden="true" class="octicon octicon-plus float-left mr-1 mt-1" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="GoogleChromeLabs/sw-toolbox">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/GoogleChromeLabs/sw-toolbox/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@240509865e" class="avatar float-left mr-1" src="https://avatars0.githubusercontent.com/u/34485582?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">240509865e</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="/240509865e" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="/240509865e?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your Gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="E/l9UuCXlFY4O7h4Lkrvj0q0uE3p7lxxgzCqbSrntfou9CzFppAcSVUvl1nlKYnHLv5f5TG5SOSfchmQ3JLGjg==" /></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/6MRSWNcWqcXsDEJhcgSCC9VYQIN2VjuH2GTOpGs6lfCrkDeJVvSuHqkHihOq3RASx+GqtWOTHsDIyDHZ9mZIw==" /></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav ">
+    <div class="repohead-details-container clearfix container ">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OcMF4mlVx4PtJdt/MO4uyVM9/tMFTJF6sZFDjIEOlQe2iFJ91JQ2op3F98V2YkpTiylsS49gqduSmL9hWudn/g==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="34268206" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/GoogleChromeLabs/sw-toolbox/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Toggle repository notifications menu"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+                <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/GoogleChromeLabs/sw-toolbox/watchers"
+            aria-label="111 users are watching this repository">
+            111
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="aNrk06e45KEerSfcdS/Fbc498/bNDQVsEMC3W4BHxPsyIZ2dp/nyGjCC/VKbFWFhi5QOJUsuTyX9lORPRzyqeQ==" /></div>
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar GoogleChromeLabs/sw-toolbox"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/GoogleChromeLabs/sw-toolbox/stargazers"
+           aria-label="2982 users starred this repository">
+          2,982
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="kaP+oMoV32Lrr8+mD/koalgRHufpat4wUdGzZVJJnUC8jFspx6trTHffRKZC590kT13/jV0aL1BDkisjIv0sXw==" /></div>
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star GoogleChromeLabs/sw-toolbox"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/GoogleChromeLabs/sw-toolbox/stargazers"
+           aria-label="2982 users starred this repository">
+          2,982
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Eg/HzP9oP4i9324ajqYjeR91tt7f2Bi77bWQaJ7PRuMFJZvjCpuOVhEO/576zikaxIt4Sk9YZFnBX+5/fCuB0Q==" /></div>
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
+                title="Fork your own copy of GoogleChromeLabs/sw-toolbox to your account"
+                aria-label="Fork your own copy of GoogleChromeLabs/sw-toolbox to your account">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/GoogleChromeLabs/sw-toolbox/network" class="social-count"
+       aria-label="236 users forked this repository">
+      236
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/GoogleChromeLabs" class="url fn" rel="author">GoogleChromeLabs</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/GoogleChromeLabs/sw-toolbox" data-pjax="#js-repo-pjax-container">sw-toolbox</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/GoogleChromeLabs/sw-toolbox" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /GoogleChromeLabs/sw-toolbox" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/GoogleChromeLabs/sw-toolbox/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /GoogleChromeLabs/sw-toolbox/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">46</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/GoogleChromeLabs/sw-toolbox/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /GoogleChromeLabs/sw-toolbox/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">3</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/GoogleChromeLabs/sw-toolbox/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /GoogleChromeLabs/sw-toolbox/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+    <a href="/GoogleChromeLabs/sw-toolbox/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /GoogleChromeLabs/sw-toolbox/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/GoogleChromeLabs/sw-toolbox/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /GoogleChromeLabs/sw-toolbox/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+  <a href="/GoogleChromeLabs/sw-toolbox/blob/2fb9a52cefd47cac6902ec5bb20fd4b0aafc3bc4/sw-toolbox.js.map" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:1f7bc2febc3a6910d7a68eb6f4b75e32 -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/appcache-helper/sw-toolbox.js.map"
+               data-name="appcache-helper"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                appcache-helper
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/argh/sw-toolbox.js.map"
+               data-name="argh"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                argh
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/client-helper/sw-toolbox.js.map"
+               data-name="client-helper"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                client-helper
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/follow-up-100/sw-toolbox.js.map"
+               data-name="follow-up-100"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                follow-up-100
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/gh-pages/sw-toolbox.js.map"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/GoogleChromeLabs/sw-toolbox/blob/master/sw-toolbox.js.map"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/release/sw-toolbox.js.map"
+               data-name="release"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                release
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/test-fix/sw-toolbox.js.map"
+               data-name="test-fix"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                test-fix
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/GoogleChromeLabs/sw-toolbox/blob/update-geckodriver/sw-toolbox.js.map"
+               data-name="update-geckodriver"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                update-geckodriver
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.6.1/sw-toolbox.js.map"
+              data-name="v3.6.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.6.1">
+                v3.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.6.0/sw-toolbox.js.map"
+              data-name="v3.6.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.6.0">
+                v3.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.5.0/sw-toolbox.js.map"
+              data-name="v3.5.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.5.0">
+                v3.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.4.0/sw-toolbox.js.map"
+              data-name="v3.4.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.4.0">
+                v3.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.3.0/sw-toolbox.js.map"
+              data-name="v3.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.0">
+                v3.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.2.1/sw-toolbox.js.map"
+              data-name="v3.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.1">
+                v3.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.2.0/sw-toolbox.js.map"
+              data-name="v3.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.0">
+                v3.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.1.1/sw-toolbox.js.map"
+              data-name="v3.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.1">
+                v3.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.1.0/sw-toolbox.js.map"
+              data-name="v3.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.0">
+                v3.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.0.1/sw-toolbox.js.map"
+              data-name="v3.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.1">
+                v3.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v3.0.0/sw-toolbox.js.map"
+              data-name="v3.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0">
+                v3.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.1.0/sw-toolbox.js.map"
+              data-name="v2.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.1.0">
+                v2.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.0.4/sw-toolbox.js.map"
+              data-name="v2.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.4">
+                v2.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.0.3/sw-toolbox.js.map"
+              data-name="v2.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.3">
+                v2.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.0.2/sw-toolbox.js.map"
+              data-name="v2.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.2">
+                v2.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.0.1/sw-toolbox.js.map"
+              data-name="v2.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.1">
+                v2.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v2.0.0/sw-toolbox.js.map"
+              data-name="v2.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.0">
+                v2.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/GoogleChromeLabs/sw-toolbox/tree/v1.0.0/sw-toolbox.js.map"
+              data-name="v1.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.0">
+                v1.0.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/GoogleChromeLabs/sw-toolbox/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/GoogleChromeLabs/sw-toolbox"><span>sw-toolbox</span></a></span></span><span class="separator">/</span><strong class="final-path">sw-toolbox.js.map</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/GoogleChromeLabs/sw-toolbox/commit/b5aadaf1d6139d85018887759d2bd890e68b091b" data-pjax>
+          b5aadaf
+        </a>
+        <relative-time datetime="2017-04-06T18:14:11Z">Apr 7, 2017</relative-time>
+      </span>
+      <div>
+        <img alt="@jeffposnick" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/1749548?s=40&amp;v=4" width="20" />
+        <a href="/jeffposnick" class="user-mention" rel="contributor">jeffposnick</a>
+          <a href="/GoogleChromeLabs/sw-toolbox/commit/b5aadaf1d6139d85018887759d2bd890e68b091b" class="message" data-pjax="true" title="Adds support for CacheQueryOptions (#240)
+
+* Adds support for CacheQueryOptions
+
+* Remove version bump
+
+* Tests for the ignoreSearch CacheQueryOption.">Adds support for CacheQueryOptions (</a><a href="https://github.com/GoogleChrome/sw-toolbox/pull/240" class="issue-link js-issue-link" data-url="https://github.com/GoogleChrome/sw-toolbox/issues/240" data-id="219932317" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#240</a><a href="/GoogleChromeLabs/sw-toolbox/commit/b5aadaf1d6139d85018887759d2bd890e68b091b" class="message" data-pjax="true" title="Adds support for CacheQueryOptions (#240)
+
+* Adds support for CacheQueryOptions
+
+* Remove version bump
+
+* Tests for the ignoreSearch CacheQueryOption.">)</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@jeffposnick" height="24" src="https://avatars3.githubusercontent.com/u/1749548?s=48&amp;v=4" width="24" />
+            <a href="/jeffposnick">jeffposnick</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/GoogleChromeLabs/sw-toolbox/raw/master/sw-toolbox.js.map" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/GoogleChromeLabs/sw-toolbox/blame/master/sw-toolbox.js.map" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/GoogleChromeLabs/sw-toolbox/commits/master/sw-toolbox.js.map" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="x-github-client://openRepo/https://github.com/GoogleChromeLabs/sw-toolbox?branch=master&amp;filepath=sw-toolbox.js.map"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/edit/master/sw-toolbox.js.map" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="AwVV/bVMe9bKhHM1fusvjmpeA4eZqHsVvUWrwoUyYba9W9u0TK8bKUsBMjFLlqn6/6qyM66/pYRbPQ1ZTmP/zg==" /></div>
+          <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+          </button>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/GoogleChromeLabs/sw-toolbox/delete/master/sw-toolbox.js.map" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="GyFsf6azT0BWaHslF5e3zTV8qNaUCAIkm4Zm4RN9XPdGA4bo+ayE2oj95QUw5I6waz72peADOQYEbM59U+2jQg==" /></div>
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    66.5 KB
+  </div>
+</div>
+
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;version&quot;:3,&quot;sources&quot;:[&quot;node_modules/browser-pack/_prelude.js&quot;,&quot;lib/helpers.js&quot;,&quot;lib/idb-cache-expiration.js&quot;,&quot;lib/listeners.js&quot;,&quot;lib/options.js&quot;,&quot;lib/route.js&quot;,&quot;lib/router.js&quot;,&quot;lib/strategies/cacheFirst.js&quot;,&quot;lib/strategies/cacheOnly.js&quot;,&quot;lib/strategies/fastest.js&quot;,&quot;lib/strategies/index.js&quot;,&quot;lib/strategies/networkFirst.js&quot;,&quot;lib/strategies/networkOnly.js&quot;,&quot;lib/sw-toolbox.js&quot;,&quot;node_modules/isarray/index.js&quot;,&quot;node_modules/path-to-regexp/index.js&quot;,&quot;node_modules/serviceworker-cache-polyfill/index.js&quot;],&quot;names&quot;:[&quot;f&quot;,&quot;exports&quot;,&quot;module&quot;,&quot;define&quot;,&quot;amd&quot;,&quot;g&quot;,&quot;window&quot;,&quot;global&quot;,&quot;self&quot;,&quot;this&quot;,&quot;toolbox&quot;,&quot;e&quot;,&quot;t&quot;,&quot;n&quot;,&quot;r&quot;,&quot;s&quot;,&quot;o&quot;,&quot;u&quot;,&quot;a&quot;,&quot;require&quot;,&quot;i&quot;,&quot;Error&quot;,&quot;code&quot;,&quot;l&quot;,&quot;call&quot;,&quot;length&quot;,&quot;1&quot;,&quot;debug&quot;,&quot;message&quot;,&quot;options&quot;,&quot;globalOptions&quot;,&quot;console&quot;,&quot;log&quot;,&quot;openCache&quot;,&quot;cacheName&quot;,&quot;cache&quot;,&quot;name&quot;,&quot;caches&quot;,&quot;open&quot;,&quot;fetchAndCache&quot;,&quot;request&quot;,&quot;successResponses&quot;,&quot;fetch&quot;,&quot;clone&quot;,&quot;then&quot;,&quot;response&quot;,&quot;method&quot;,&quot;test&quot;,&quot;status&quot;,&quot;put&quot;,&quot;cacheOptions&quot;,&quot;maxEntries&quot;,&quot;maxAgeSeconds&quot;,&quot;queueCacheExpiration&quot;,&quot;cleanup&quot;,&quot;cleanupCache&quot;,&quot;bind&quot;,&quot;cleanupQueue&quot;,&quot;requestUrl&quot;,&quot;url&quot;,&quot;now&quot;,&quot;Date&quot;,&quot;idbCacheExpiration&quot;,&quot;getDb&quot;,&quot;db&quot;,&quot;setTimestampForUrl&quot;,&quot;expireEntries&quot;,&quot;urlsToDelete&quot;,&quot;deletionPromises&quot;,&quot;map&quot;,&quot;urlToDelete&quot;,&quot;delete&quot;,&quot;Promise&quot;,&quot;all&quot;,&quot;catch&quot;,&quot;error&quot;,&quot;renameCache&quot;,&quot;source&quot;,&quot;destination&quot;,&quot;results&quot;,&quot;sourceCache&quot;,&quot;destCache&quot;,&quot;keys&quot;,&quot;requests&quot;,&quot;match&quot;,&quot;add&quot;,&quot;uncache&quot;,&quot;precache&quot;,&quot;items&quot;,&quot;validatePrecacheInput&quot;,&quot;preCacheItems&quot;,&quot;concat&quot;,&quot;isValid&quot;,&quot;Array&quot;,&quot;isArray&quot;,&quot;forEach&quot;,&quot;item&quot;,&quot;Request&quot;,&quot;TypeError&quot;,&quot;isResponseFresh&quot;,&quot;dateHeader&quot;,&quot;headers&quot;,&quot;get&quot;,&quot;getTime&quot;,&quot;openDb&quot;,&quot;resolve&quot;,&quot;reject&quot;,&quot;indexedDB&quot;,&quot;DB_PREFIX&quot;,&quot;DB_VERSION&quot;,&quot;onupgradeneeded&quot;,&quot;result&quot;,&quot;createObjectStore&quot;,&quot;STORE_NAME&quot;,&quot;keyPath&quot;,&quot;URL_PROPERTY&quot;,&quot;createIndex&quot;,&quot;TIMESTAMP_PROPERTY&quot;,&quot;unique&quot;,&quot;onsuccess&quot;,&quot;onerror&quot;,&quot;cacheNameToDbPromise&quot;,&quot;transaction&quot;,&quot;objectStore&quot;,&quot;timestamp&quot;,&quot;oncomplete&quot;,&quot;onabort&quot;,&quot;expireOldEntries&quot;,&quot;maxAgeMillis&quot;,&quot;urls&quot;,&quot;index&quot;,&quot;openCursor&quot;,&quot;cursorEvent&quot;,&quot;cursor&quot;,&quot;target&quot;,&quot;value&quot;,&quot;push&quot;,&quot;continue&quot;,&quot;expireExtraEntries&quot;,&quot;countRequest&quot;,&quot;count&quot;,&quot;initialCount&quot;,&quot;oldUrls&quot;,&quot;extraUrls&quot;,&quot;fetchListener&quot;,&quot;event&quot;,&quot;handler&quot;,&quot;router&quot;,&quot;respondWith&quot;,&quot;default&quot;,&quot;indexOf&quot;,&quot;activateListener&quot;,&quot;helpers&quot;,&quot;inactiveCache&quot;,&quot;waitUntil&quot;,&quot;flatten&quot;,&quot;reduce&quot;,&quot;b&quot;,&quot;installListener&quot;,&quot;join&quot;,&quot;addAll&quot;,&quot;scope&quot;,&quot;registration&quot;,&quot;URL&quot;,&quot;location&quot;,&quot;href&quot;,&quot;queryOptions&quot;,&quot;networkTimeoutSeconds&quot;,&quot;basePath&quot;,&quot;pathname&quot;,&quot;pathRegexp&quot;,&quot;Route&quot;,&quot;path&quot;,&quot;RegExp&quot;,&quot;fullUrlRegExp&quot;,&quot;regexp&quot;,&quot;prototype&quot;,&quot;makeHandler&quot;,&quot;values&quot;,&quot;exec&quot;,&quot;key&quot;,&quot;regexEscape&quot;,&quot;replace&quot;,&quot;keyMatch&quot;,&quot;string&quot;,&quot;entriesIterator&quot;,&quot;entries&quot;,&quot;next&quot;,&quot;matches&quot;,&quot;done&quot;,&quot;Router&quot;,&quot;routes&quot;,&quot;Map&quot;,&quot;set&quot;,&quot;origin&quot;,&quot;toLowerCase&quot;,&quot;route&quot;,&quot;has&quot;,&quot;methodMap&quot;,&quot;routeMap&quot;,&quot;regExp&quot;,&quot;matchMethod&quot;,&quot;urlObject&quot;,&quot;_match&quot;,&quot;methodMaps&quot;,&quot;pathOrUrl&quot;,&quot;cacheFirst&quot;,&quot;cacheQueryOptions&quot;,&quot;cacheOnly&quot;,&quot;fastest&quot;,&quot;rejected&quot;,&quot;reasons&quot;,&quot;maybeReject&quot;,&quot;reason&quot;,&quot;toString&quot;,&quot;maybeResolve&quot;,&quot;Response&quot;,&quot;networkOnly&quot;,&quot;networkFirst&quot;,&quot;timeoutId&quot;,&quot;originalResponse&quot;,&quot;promises&quot;,&quot;cacheWhenTimedOutPromise&quot;,&quot;setTimeout&quot;,&quot;networkPromise&quot;,&quot;clearTimeout&quot;,&quot;statusText&quot;,&quot;race&quot;,&quot;strategies&quot;,&quot;listeners&quot;,&quot;addEventListener&quot;,&quot;arr&quot;,&quot;Object&quot;,&quot;parse&quot;,&quot;str&quot;,&quot;res&quot;,&quot;tokens&quot;,&quot;defaultDelimiter&quot;,&quot;delimiter&quot;,&quot;PATH_REGEXP&quot;,&quot;m&quot;,&quot;escaped&quot;,&quot;offset&quot;,&quot;slice&quot;,&quot;prefix&quot;,&quot;capture&quot;,&quot;group&quot;,&quot;modifier&quot;,&quot;asterisk&quot;,&quot;partial&quot;,&quot;repeat&quot;,&quot;optional&quot;,&quot;pattern&quot;,&quot;escapeGroup&quot;,&quot;escapeString&quot;,&quot;substr&quot;,&quot;compile&quot;,&quot;tokensToFunction&quot;,&quot;encodeURIComponentPretty&quot;,&quot;encodeURI&quot;,&quot;c&quot;,&quot;charCodeAt&quot;,&quot;toUpperCase&quot;,&quot;encodeAsterisk&quot;,&quot;obj&quot;,&quot;opts&quot;,&quot;data&quot;,&quot;encode&quot;,&quot;pretty&quot;,&quot;encodeURIComponent&quot;,&quot;token&quot;,&quot;segment&quot;,&quot;isarray&quot;,&quot;JSON&quot;,&quot;stringify&quot;,&quot;j&quot;,&quot;attachKeys&quot;,&quot;re&quot;,&quot;flags&quot;,&quot;sensitive&quot;,&quot;regexpToRegexp&quot;,&quot;groups&quot;,&quot;arrayToRegexp&quot;,&quot;parts&quot;,&quot;pathToRegexp&quot;,&quot;stringToRegexp&quot;,&quot;tokensToRegExp&quot;,&quot;strict&quot;,&quot;end&quot;,&quot;endsWithDelimiter&quot;,&quot;nativeAddAll&quot;,&quot;Cache&quot;,&quot;userAgent&quot;,&quot;navigator&quot;,&quot;agent&quot;,&quot;version&quot;,&quot;parseInt&quot;,&quot;NetworkError&quot;,&quot;create&quot;,&quot;arguments&quot;,&quot;String&quot;,&quot;scheme&quot;,&quot;protocol&quot;,&quot;responses&quot;,&quot;some&quot;,&quot;ok&quot;],&quot;mappings&quot;:&quot;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&quot;,&quot;file&quot;:&quot;sw-toolbox.js&quot;,&quot;sourcesContent&quot;:[&quot;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\&quot;function\&quot;&amp;&amp;require;if(!u&amp;&amp;a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\&quot;Cannot find module &#39;\&quot;+o+\&quot;&#39;\&quot;);throw f.code=\&quot;MODULE_NOT_FOUND\&quot;,f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\&quot;function\&quot;&amp;&amp;require;for(var o=0;o&lt;r.length;o++)s(r[o]);return s})&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\n\nvar globalOptions = require(&#39;./options&#39;);\nvar idbCacheExpiration = require(&#39;./idb-cache-expiration&#39;);\n\nfunction debug(message, options) {\n  options = options || {};\n  var flag = options.debug || globalOptions.debug;\n  if (flag) {\n    console.log(&#39;[sw-toolbox] &#39; + message);\n  }\n}\n\nfunction openCache(options) {\n  var cacheName;\n  if (options &amp;&amp; options.cache) {\n    cacheName = options.cache.name;\n  }\n  cacheName = cacheName || globalOptions.cache.name;\n\n  return caches.open(cacheName);\n}\n\nfunction fetchAndCache(request, options) {\n  options = options || {};\n  var successResponses = options.successResponses ||\n      globalOptions.successResponses;\n\n  return fetch(request.clone()).then(function(response) {\n    // Only cache GET requests with successful responses.\n    // Since this is not part of the promise chain, it will be done\n    // asynchronously and will not block the response from being returned to the\n    // page.\n    if (request.method === &#39;GET&#39; &amp;&amp; successResponses.test(response.status)) {\n      openCache(options).then(function(cache) {\n        cache.put(request, response).then(function() {\n          // If any of the options are provided in options.cache then use them.\n          // Do not fallback to the global options for any that are missing\n          // unless they are all missing.\n          var cacheOptions = options.cache || globalOptions.cache;\n\n          // Only run the cache expiration logic if at least one of the maximums\n          // is set, and if we have a name for the cache that the options are\n          // being applied to.\n          if ((cacheOptions.maxEntries || cacheOptions.maxAgeSeconds) &amp;&amp;\n              cacheOptions.name) {\n            queueCacheExpiration(request, cache, cacheOptions);\n          }\n        });\n      });\n    }\n\n    return response.clone();\n  });\n}\n\nvar cleanupQueue;\nfunction queueCacheExpiration(request, cache, cacheOptions) {\n  var cleanup = cleanupCache.bind(null, request, cache, cacheOptions);\n\n  if (cleanupQueue) {\n    cleanupQueue = cleanupQueue.then(cleanup);\n  } else {\n    cleanupQueue = cleanup();\n  }\n}\n\nfunction cleanupCache(request, cache, cacheOptions) {\n  var requestUrl = request.url;\n  var maxAgeSeconds = cacheOptions.maxAgeSeconds;\n  var maxEntries = cacheOptions.maxEntries;\n  var cacheName = cacheOptions.name;\n\n  var now = Date.now();\n  debug(&#39;Updating LRU order for &#39; + requestUrl + &#39;. Max entries is &#39; +\n    maxEntries + &#39;, max age is &#39; + maxAgeSeconds);\n\n  return idbCacheExpiration.getDb(cacheName).then(function(db) {\n    return idbCacheExpiration.setTimestampForUrl(db, requestUrl, now);\n  }).then(function(db) {\n    return idbCacheExpiration.expireEntries(db, maxEntries, maxAgeSeconds, now);\n  }).then(function(urlsToDelete) {\n    debug(&#39;Successfully updated IDB.&#39;);\n\n    var deletionPromises = urlsToDelete.map(function(urlToDelete) {\n      return cache.delete(urlToDelete);\n    });\n\n    return Promise.all(deletionPromises).then(function() {\n      debug(&#39;Done with cache cleanup.&#39;);\n    });\n  }).catch(function(error) {\n    debug(error);\n  });\n}\n\nfunction renameCache(source, destination, options) {\n  debug(&#39;Renaming cache: [&#39; + source + &#39;] to [&#39; + destination + &#39;]&#39;, options);\n  return caches.delete(destination).then(function() {\n    return Promise.all([\n      caches.open(source),\n      caches.open(destination)\n    ]).then(function(results) {\n      var sourceCache = results[0];\n      var destCache = results[1];\n\n      return sourceCache.keys().then(function(requests) {\n        return Promise.all(requests.map(function(request) {\n          return sourceCache.match(request).then(function(response) {\n            return destCache.put(request, response);\n          });\n        }));\n      }).then(function() {\n        return caches.delete(source);\n      });\n    });\n  });\n}\n\nfunction cache(url, options) {\n  return openCache(options).then(function(cache) {\n    return cache.add(url);\n  });\n}\n\nfunction uncache(url, options) {\n  return openCache(options).then(function(cache) {\n    return cache.delete(url);\n  });\n}\n\nfunction precache(items) {\n  if (!(items instanceof Promise)) {\n    validatePrecacheInput(items);\n  }\n\n  globalOptions.preCacheItems = globalOptions.preCacheItems.concat(items);\n}\n\nfunction validatePrecacheInput(items) {\n  var isValid = Array.isArray(items);\n  if (isValid) {\n    items.forEach(function(item) {\n      if (!(typeof item === &#39;string&#39; || (item instanceof Request))) {\n        isValid = false;\n      }\n    });\n  }\n\n  if (!isValid) {\n    throw new TypeError(&#39;The precache method expects either an array of &#39; +\n    &#39;strings and/or Requests or a Promise that resolves to an array of &#39; +\n    &#39;strings and/or Requests.&#39;);\n  }\n\n  return items;\n}\n\nfunction isResponseFresh(response, maxAgeSeconds, now) {\n  // If we don&#39;t have a response, then it&#39;s not fresh.\n  if (!response) {\n    return false;\n  }\n\n  // Only bother checking the age of the response if maxAgeSeconds is set.\n  if (maxAgeSeconds) {\n    var dateHeader = response.headers.get(&#39;date&#39;);\n    // If there&#39;s no Date: header, then fall through and return true.\n    if (dateHeader) {\n      var parsedDate = new Date(dateHeader);\n      // If the Date: header was invalid for some reason, parsedDate.getTime()\n      // will return NaN, and the comparison will always be false. That means\n      // that an invalid date will be treated as if the response is fresh.\n      if ((parsedDate.getTime() + (maxAgeSeconds * 1000)) &lt; now) {\n        // Only return false if all the other conditions are met.\n        return false;\n      }\n    }\n  }\n\n  // Fall back on returning true by default, to match the previous behavior in\n  // which we never bothered checking to see whether the response was fresh.\n  return true;\n}\n\nmodule.exports = {\n  debug: debug,\n  fetchAndCache: fetchAndCache,\n  openCache: openCache,\n  renameCache: renameCache,\n  cache: cache,\n  uncache: uncache,\n  precache: precache,\n  validatePrecacheInput: validatePrecacheInput,\n  isResponseFresh: isResponseFresh\n};\n&quot;,&quot;/*\n Copyright 2015 Google Inc. All Rights Reserved.\n\n Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n you may not use this file except in compliance with the License.\n You may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\n Unless required by applicable law or agreed to in writing, software\n distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n See the License for the specific language governing permissions and\n limitations under the License.\n*/\n&#39;use strict&#39;;\n\nvar DB_PREFIX = &#39;sw-toolbox-&#39;;\nvar DB_VERSION = 1;\nvar STORE_NAME = &#39;store&#39;;\nvar URL_PROPERTY = &#39;url&#39;;\nvar TIMESTAMP_PROPERTY = &#39;timestamp&#39;;\nvar cacheNameToDbPromise = {};\n\nfunction openDb(cacheName) {\n  return new Promise(function(resolve, reject) {\n    var request = indexedDB.open(DB_PREFIX + cacheName, DB_VERSION);\n\n    request.onupgradeneeded = function() {\n      var objectStore = request.result.createObjectStore(STORE_NAME,\n          {keyPath: URL_PROPERTY});\n      objectStore.createIndex(TIMESTAMP_PROPERTY, TIMESTAMP_PROPERTY,\n          {unique: false});\n    };\n\n    request.onsuccess = function() {\n      resolve(request.result);\n    };\n\n    request.onerror = function() {\n      reject(request.error);\n    };\n  });\n}\n\nfunction getDb(cacheName) {\n  if (!(cacheName in cacheNameToDbPromise)) {\n    cacheNameToDbPromise[cacheName] = openDb(cacheName);\n  }\n\n  return cacheNameToDbPromise[cacheName];\n}\n\nfunction setTimestampForUrl(db, url, now) {\n  return new Promise(function(resolve, reject) {\n    var transaction = db.transaction(STORE_NAME, &#39;readwrite&#39;);\n    var objectStore = transaction.objectStore(STORE_NAME);\n    objectStore.put({url: url, timestamp: now});\n\n    transaction.oncomplete = function() {\n      resolve(db);\n    };\n\n    transaction.onabort = function() {\n      reject(transaction.error);\n    };\n  });\n}\n\nfunction expireOldEntries(db, maxAgeSeconds, now) {\n  // Bail out early by resolving with an empty array if we&#39;re not using\n  // maxAgeSeconds.\n  if (!maxAgeSeconds) {\n    return Promise.resolve([]);\n  }\n\n  return new Promise(function(resolve, reject) {\n    var maxAgeMillis = maxAgeSeconds * 1000;\n    var urls = [];\n\n    var transaction = db.transaction(STORE_NAME, &#39;readwrite&#39;);\n    var objectStore = transaction.objectStore(STORE_NAME);\n    var index = objectStore.index(TIMESTAMP_PROPERTY);\n\n    index.openCursor().onsuccess = function(cursorEvent) {\n      var cursor = cursorEvent.target.result;\n      if (cursor) {\n        if (now - maxAgeMillis &gt; cursor.value[TIMESTAMP_PROPERTY]) {\n          var url = cursor.value[URL_PROPERTY];\n          urls.push(url);\n          objectStore.delete(url);\n          cursor.continue();\n        }\n      }\n    };\n\n    transaction.oncomplete = function() {\n      resolve(urls);\n    };\n\n    transaction.onabort = reject;\n  });\n}\n\nfunction expireExtraEntries(db, maxEntries) {\n  // Bail out early by resolving with an empty array if we&#39;re not using\n  // maxEntries.\n  if (!maxEntries) {\n    return Promise.resolve([]);\n  }\n\n  return new Promise(function(resolve, reject) {\n    var urls = [];\n\n    var transaction = db.transaction(STORE_NAME, &#39;readwrite&#39;);\n    var objectStore = transaction.objectStore(STORE_NAME);\n    var index = objectStore.index(TIMESTAMP_PROPERTY);\n\n    var countRequest = index.count();\n    index.count().onsuccess = function() {\n      var initialCount = countRequest.result;\n\n      if (initialCount &gt; maxEntries) {\n        index.openCursor().onsuccess = function(cursorEvent) {\n          var cursor = cursorEvent.target.result;\n          if (cursor) {\n            var url = cursor.value[URL_PROPERTY];\n            urls.push(url);\n            objectStore.delete(url);\n            if (initialCount - urls.length &gt; maxEntries) {\n              cursor.continue();\n            }\n          }\n        };\n      }\n    };\n\n    transaction.oncomplete = function() {\n      resolve(urls);\n    };\n\n    transaction.onabort = reject;\n  });\n}\n\nfunction expireEntries(db, maxEntries, maxAgeSeconds, now) {\n  return expireOldEntries(db, maxAgeSeconds, now).then(function(oldUrls) {\n    return expireExtraEntries(db, maxEntries).then(function(extraUrls) {\n      return oldUrls.concat(extraUrls);\n    });\n  });\n}\n\nmodule.exports = {\n  getDb: getDb,\n  setTimestampForUrl: setTimestampForUrl,\n  expireEntries: expireEntries\n};\n&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\n\n// For cache.addAll.\nrequire(&#39;serviceworker-cache-polyfill&#39;);\n\nvar helpers = require(&#39;./helpers&#39;);\nvar router = require(&#39;./router&#39;);\nvar options = require(&#39;./options&#39;);\n\n// Event listeners\n\nfunction fetchListener(event) {\n  var handler = router.match(event.request);\n\n  if (handler) {\n    event.respondWith(handler(event.request));\n  } else if (router.default &amp;&amp;\n    event.request.method === &#39;GET&#39; &amp;&amp;\n    // Ensure that chrome-extension:// requests don&#39;t trigger the default route.\n    event.request.url.indexOf(&#39;http&#39;) === 0) {\n    event.respondWith(router.default(event.request));\n  }\n}\n\nfunction activateListener(event) {\n  helpers.debug(&#39;activate event fired&#39;);\n  var inactiveCache = options.cache.name + &#39;$$$inactive$$$&#39;;\n  event.waitUntil(helpers.renameCache(inactiveCache, options.cache.name));\n}\n\nfunction flatten(items) {\n  return items.reduce(function(a, b) {\n    return a.concat(b);\n  }, []);\n}\n\nfunction installListener(event) {\n  var inactiveCache = options.cache.name + &#39;$$$inactive$$$&#39;;\n  helpers.debug(&#39;install event fired&#39;);\n  helpers.debug(&#39;creating cache [&#39; + inactiveCache + &#39;]&#39;);\n  event.waitUntil(\n    helpers.openCache({cache: {name: inactiveCache}})\n    .then(function(cache) {\n      return Promise.all(options.preCacheItems)\n      .then(flatten)\n      .then(helpers.validatePrecacheInput)\n      .then(function(preCacheItems) {\n        helpers.debug(&#39;preCache list: &#39; +\n              (preCacheItems.join(&#39;, &#39;) || &#39;(none)&#39;));\n        return cache.addAll(preCacheItems);\n      });\n    })\n  );\n}\n\nmodule.exports = {\n  fetchListener: fetchListener,\n  activateListener: activateListener,\n  installListener: installListener\n};\n&quot;,&quot;/*\n\tCopyright 2015 Google Inc. All Rights Reserved.\n\n\tLicensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License.\n*/\n&#39;use strict&#39;;\n\n// TODO: This is necessary to handle different implementations in the wild\n// The spec defines self.registration, but it was not implemented in Chrome 40.\nvar scope;\nif (self.registration) {\n  scope = self.registration.scope;\n} else {\n  scope = self.scope || new URL(&#39;./&#39;, self.location).href;\n}\n\nmodule.exports = {\n  cache: {\n    name: &#39;$$$toolbox-cache$$$&#39; + scope + &#39;$$$&#39;,\n    maxAgeSeconds: null,\n    maxEntries: null,\n    queryOptions: null\n  },\n  debug: false,\n  networkTimeoutSeconds: null,\n  preCacheItems: [],\n  // A regular expression to apply to HTTP response codes. Codes that match\n  // will be considered successes, while others will not, and will not be\n  // cached.\n  successResponses: /^0|([123]\\d\\d)|(40[14567])|410$/\n};\n&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\n\n// TODO: Use self.registration.scope instead of self.location\nvar url = new URL(&#39;./&#39;, self.location);\nvar basePath = url.pathname;\nvar pathRegexp = require(&#39;path-to-regexp&#39;);\n\nvar Route = function(method, path, handler, options) {\n  if (path instanceof RegExp) {\n    this.fullUrlRegExp = path;\n  } else {\n    // The URL() constructor can&#39;t parse express-style routes as they are not\n    // valid urls. This means we have to manually manipulate relative urls into\n    // absolute ones. This check is extremely naive but implementing a tweaked\n    // version of the full algorithm seems like overkill\n    // (https://url.spec.whatwg.org/#concept-basic-url-parser)\n    if (path.indexOf(&#39;/&#39;) !== 0) {\n      path = basePath + path;\n    }\n\n    this.keys = [];\n    this.regexp = pathRegexp(path, this.keys);\n  }\n\n  this.method = method;\n  this.options = options;\n  this.handler = handler;\n};\n\nRoute.prototype.makeHandler = function(url) {\n  var values;\n  if (this.regexp) {\n    var match = this.regexp.exec(url);\n    values = {};\n    this.keys.forEach(function(key, index) {\n      values[key.name] = match[index + 1];\n    });\n  }\n\n  return function(request) {\n    return this.handler(request, values, this.options);\n  }.bind(this);\n};\n\nmodule.exports = Route;\n&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\n\nvar Route = require(&#39;./route&#39;);\nvar helpers = require(&#39;./helpers&#39;);\n\nfunction regexEscape(s) {\n  return s.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g, &#39;\\\\$&amp;&#39;);\n}\n\nvar keyMatch = function(map, string) {\n  // This would be better written as a for..of loop, but that would break the\n  // minifyify process in the build.\n  var entriesIterator = map.entries();\n  var item = entriesIterator.next();\n  var matches = [];\n  while (!item.done) {\n    var pattern = new RegExp(item.value[0]);\n    if (pattern.test(string)) {\n      matches.push(item.value[1]);\n    }\n    item = entriesIterator.next();\n  }\n  return matches;\n};\n\nvar Router = function() {\n  this.routes = new Map();\n  // Create the dummy origin for RegExp-based routes\n  this.routes.set(RegExp, new Map());\n  this.default = null;\n};\n\n[&#39;get&#39;, &#39;post&#39;, &#39;put&#39;, &#39;delete&#39;, &#39;head&#39;, &#39;any&#39;].forEach(function(method) {\n  Router.prototype[method] = function(path, handler, options) {\n    return this.add(method, path, handler, options);\n  };\n});\n\nRouter.prototype.add = function(method, path, handler, options) {\n  options = options || {};\n  var origin;\n\n  if (path instanceof RegExp) {\n    // We need a unique key to use in the Map to distinguish RegExp paths\n    // from Express-style paths + origins. Since we can use any object as the\n    // key in a Map, let&#39;s use the RegExp constructor!\n    origin = RegExp;\n  } else {\n    origin = options.origin || self.location.origin;\n    if (origin instanceof RegExp) {\n      origin = origin.source;\n    } else {\n      origin = regexEscape(origin);\n    }\n  }\n\n  method = method.toLowerCase();\n\n  var route = new Route(method, path, handler, options);\n\n  if (!this.routes.has(origin)) {\n    this.routes.set(origin, new Map());\n  }\n\n  var methodMap = this.routes.get(origin);\n  if (!methodMap.has(method)) {\n    methodMap.set(method, new Map());\n  }\n\n  var routeMap = methodMap.get(method);\n  var regExp = route.regexp || route.fullUrlRegExp;\n\n  if (routeMap.has(regExp.source)) {\n    helpers.debug(&#39;\&quot;&#39; + path + &#39;\&quot; resolves to same regex as existing route.&#39;);\n  }\n\n  routeMap.set(regExp.source, route);\n};\n\nRouter.prototype.matchMethod = function(method, url) {\n  var urlObject = new URL(url);\n  var origin = urlObject.origin;\n  var path = urlObject.pathname;\n\n  // We want to first check to see if there&#39;s a match against any\n  // \&quot;Express-style\&quot; routes (string for the path, RegExp for the origin).\n  // Checking for Express-style matches first maintains the legacy behavior.\n  // If there&#39;s no match, we next check for a match against any RegExp routes,\n  // where the RegExp in question matches the full URL (both origin and path).\n  return this._match(method, keyMatch(this.routes, origin), path) ||\n    this._match(method, [this.routes.get(RegExp)], url);\n};\n\nRouter.prototype._match = function(method, methodMaps, pathOrUrl) {\n  if (methodMaps.length === 0) {\n    return null;\n  }\n\n  for (var i = 0; i &lt; methodMaps.length; i++) {\n    var methodMap = methodMaps[i];\n    var routeMap = methodMap &amp;&amp; methodMap.get(method.toLowerCase());\n    if (routeMap) {\n      var routes = keyMatch(routeMap, pathOrUrl);\n      if (routes.length &gt; 0) {\n        return routes[0].makeHandler(pathOrUrl);\n      }\n    }\n  }\n\n  return null;\n};\n\nRouter.prototype.match = function(request) {\n  return this.matchMethod(request.method, request.url) ||\n      this.matchMethod(&#39;any&#39;, request.url);\n};\n\nmodule.exports = new Router();\n&quot;,&quot;/*\n\tCopyright 2014 Google Inc. All Rights Reserved.\n\n\tLicensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License.\n*/\n&#39;use strict&#39;;\nvar globalOptions = require(&#39;../options&#39;);\nvar helpers = require(&#39;../helpers&#39;);\n\nfunction cacheFirst(request, values, options) {\n  options = options || {};\n  var cacheOptions = options.cache || globalOptions.cache;\n  var cacheQueryOptions = cacheOptions.queryOptions;\n  helpers.debug(&#39;Strategy: cache first [&#39; + request.url + &#39;]&#39;, options);\n  return helpers.openCache(options).then(function(cache) {\n    return cache.match(request, cacheQueryOptions).then(function(response) {\n      var now = Date.now();\n      if (helpers.isResponseFresh(response, cacheOptions.maxAgeSeconds, now)) {\n        return response;\n      }\n\n      return helpers.fetchAndCache(request, options);\n    });\n  });\n}\n\nmodule.exports = cacheFirst;\n&quot;,&quot;/*\n\tCopyright 2014 Google Inc. All Rights Reserved.\n\n\tLicensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License.\n*/\n&#39;use strict&#39;;\nvar globalOptions = require(&#39;../options&#39;);\nvar helpers = require(&#39;../helpers&#39;);\n\nfunction cacheOnly(request, values, options) {\n  options = options || {};\n  var cacheOptions = options.cache || globalOptions.cache;\n  var cacheQueryOptions = cacheOptions.queryOptions;\n  helpers.debug(&#39;Strategy: cache only [&#39; + request.url + &#39;]&#39;, options);\n  return helpers.openCache(options).then(function(cache) {\n    return cache.match(request, cacheQueryOptions).then(function(response) {\n      var now = Date.now();\n      if (helpers.isResponseFresh(response, cacheOptions.maxAgeSeconds, now)) {\n        return response;\n      }\n\n      return undefined;\n    });\n  });\n}\n\nmodule.exports = cacheOnly;\n&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\nvar helpers = require(&#39;../helpers&#39;);\nvar cacheOnly = require(&#39;./cacheOnly&#39;);\n\nfunction fastest(request, values, options) {\n  helpers.debug(&#39;Strategy: fastest [&#39; + request.url + &#39;]&#39;, options);\n\n  return new Promise(function(resolve, reject) {\n    var rejected = false;\n    var reasons = [];\n\n    var maybeReject = function(reason) {\n      reasons.push(reason.toString());\n      if (rejected) {\n        reject(new Error(&#39;Both cache and network failed: \&quot;&#39; +\n            reasons.join(&#39;\&quot;, \&quot;&#39;) + &#39;\&quot;&#39;));\n      } else {\n        rejected = true;\n      }\n    };\n\n    var maybeResolve = function(result) {\n      if (result instanceof Response) {\n        resolve(result);\n      } else {\n        maybeReject(&#39;No result returned&#39;);\n      }\n    };\n\n    helpers.fetchAndCache(request.clone(), options)\n      .then(maybeResolve, maybeReject);\n\n    cacheOnly(request, values, options)\n      .then(maybeResolve, maybeReject);\n  });\n}\n\nmodule.exports = fastest;\n&quot;,&quot;/*\n\tCopyright 2014 Google Inc. All Rights Reserved.\n\n\tLicensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License.\n*/\nmodule.exports = {\n  networkOnly: require(&#39;./networkOnly&#39;),\n  networkFirst: require(&#39;./networkFirst&#39;),\n  cacheOnly: require(&#39;./cacheOnly&#39;),\n  cacheFirst: require(&#39;./cacheFirst&#39;),\n  fastest: require(&#39;./fastest&#39;)\n};\n&quot;,&quot;/*\n Copyright 2015 Google Inc. All Rights Reserved.\n\n Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n you may not use this file except in compliance with the License.\n You may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\n Unless required by applicable law or agreed to in writing, software\n distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n See the License for the specific language governing permissions and\n limitations under the License.\n*/\n&#39;use strict&#39;;\nvar globalOptions = require(&#39;../options&#39;);\nvar helpers = require(&#39;../helpers&#39;);\n\nfunction networkFirst(request, values, options) {\n  options = options || {};\n  var cacheOptions = options.cache || globalOptions.cache;\n  var cacheQueryOptions = cacheOptions.queryOptions;\n  var successResponses = options.successResponses ||\n      globalOptions.successResponses;\n  // This will bypass options.networkTimeout if it&#39;s set to a false-y value like\n  // 0, but that&#39;s the sane thing to do anyway.\n  var networkTimeoutSeconds = options.networkTimeoutSeconds ||\n      globalOptions.networkTimeoutSeconds;\n  helpers.debug(&#39;Strategy: network first [&#39; + request.url + &#39;]&#39;, options);\n\n  return helpers.openCache(options).then(function(cache) {\n    var timeoutId;\n    var promises = [];\n    var originalResponse;\n\n    if (networkTimeoutSeconds) {\n      var cacheWhenTimedOutPromise = new Promise(function(resolve) {\n        timeoutId = setTimeout(function() {\n          cache.match(request, cacheQueryOptions).then(function(response) {\n            // Only resolve this promise if there&#39;s a valid response in the\n            // cache. This ensures that we won&#39;t time out a network request\n            // unless there&#39;s a cached entry to fallback on, which is arguably\n            // the preferable behavior.\n            var now = Date.now();\n            var maxAgeSeconds = cacheOptions.maxAgeSeconds;\n            if (helpers.isResponseFresh(response, maxAgeSeconds, now)) {\n              resolve(response);\n            }\n          });\n        }, networkTimeoutSeconds * 1000);\n      });\n      promises.push(cacheWhenTimedOutPromise);\n    }\n\n    var networkPromise = helpers.fetchAndCache(request, options)\n      .then(function(response) {\n        // We&#39;ve got a response, so clear the network timeout if there is one.\n        if (timeoutId) {\n          clearTimeout(timeoutId);\n        }\n\n        if (successResponses.test(response.status)) {\n          return response;\n        }\n\n        helpers.debug(&#39;Response was an HTTP error: &#39; + response.statusText,\n            options);\n        originalResponse = response;\n        throw new Error(&#39;Bad response&#39;);\n      }).catch(function(error) {\n        helpers.debug(&#39;Network or response error, fallback to cache [&#39; +\n            request.url + &#39;]&#39;, options);\n        return cache.match(request, cacheQueryOptions).then(function(response) {\n          // If there&#39;s a match in the cache, resolve with that.\n          if (response) {\n            return response;\n          }\n\n          // If we have a Response object from the previous fetch, then resolve\n          // with that, even though it corresponds to an error status code.\n          if (originalResponse) {\n            return originalResponse;\n          }\n\n          // If we don&#39;t have a Response object from the previous fetch, likely\n          // due to a network failure, then reject with the failure error.\n          throw error;\n        });\n      });\n\n    promises.push(networkPromise);\n\n    return Promise.race(promises);\n  });\n}\n\nmodule.exports = networkFirst;\n&quot;,&quot;/*\n\tCopyright 2014 Google Inc. All Rights Reserved.\n\n\tLicensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License.\n*/\n&#39;use strict&#39;;\nvar helpers = require(&#39;../helpers&#39;);\n\nfunction networkOnly(request, values, options) {\n  helpers.debug(&#39;Strategy: network only [&#39; + request.url + &#39;]&#39;, options);\n  return fetch(request);\n}\n\nmodule.exports = networkOnly;\n&quot;,&quot;/*\n  Copyright 2014 Google Inc. All Rights Reserved.\n\n  Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n&#39;use strict&#39;;\n\n// This is the entrypoint for the sw-toolbox bundle. All code with\n// side effects (e.g. adding event listeners) should be in this file.\n\nvar options = require(&#39;./options&#39;);\nvar router = require(&#39;./router&#39;);\nvar helpers = require(&#39;./helpers&#39;);\nvar strategies = require(&#39;./strategies&#39;);\nvar listeners = require(&#39;./listeners&#39;);\n\nhelpers.debug(&#39;Service Worker Toolbox is loading&#39;);\n\n// Set up listeners.\n\nself.addEventListener(&#39;install&#39;, listeners.installListener);\nself.addEventListener(&#39;activate&#39;, listeners.activateListener);\nself.addEventListener(&#39;fetch&#39;, listeners.fetchListener);\n\nmodule.exports = {\n  networkOnly: strategies.networkOnly,\n  networkFirst: strategies.networkFirst,\n  cacheOnly: strategies.cacheOnly,\n  cacheFirst: strategies.cacheFirst,\n  fastest: strategies.fastest,\n  router: router,\n  options: options,\n  cache: helpers.cache,\n  uncache: helpers.uncache,\n  precache: helpers.precache\n};\n&quot;,&quot;module.exports = Array.isArray || function (arr) {\n  return Object.prototype.toString.call(arr) == &#39;[object Array]&#39;;\n};\n&quot;,&quot;var isarray = require(&#39;isarray&#39;)\n\n/**\n * Expose `pathToRegexp`.\n */\nmodule.exports = pathToRegexp\nmodule.exports.parse = parse\nmodule.exports.compile = compile\nmodule.exports.tokensToFunction = tokensToFunction\nmodule.exports.tokensToRegExp = tokensToRegExp\n\n/**\n * The main path matching regexp utility.\n *\n * @type {RegExp}\n */\nvar PATH_REGEXP = new RegExp([\n  // Match escaped characters that would otherwise appear in future matches.\n  // This allows the user to escape special characters that won&#39;t transform.\n  &#39;(\\\\\\\\.)&#39;,\n  // Match Express-style parameters and un-named parameters with a prefix\n  // and optional suffixes. Matches appear as:\n  //\n  // \&quot;/:test(\\\\d+)?\&quot; =&gt; [\&quot;/\&quot;, \&quot;test\&quot;, \&quot;\\d+\&quot;, undefined, \&quot;?\&quot;, undefined]\n  // \&quot;/route(\\\\d+)\&quot;  =&gt; [undefined, undefined, undefined, \&quot;\\d+\&quot;, undefined, undefined]\n  // \&quot;/*\&quot;            =&gt; [\&quot;/\&quot;, undefined, undefined, undefined, undefined, \&quot;*\&quot;]\n  &#39;([\\\\/.])?(?:(?:\\\\:(\\\\w+)(?:\\\\(((?:\\\\\\\\.|[^\\\\\\\\()])+)\\\\))?|\\\\(((?:\\\\\\\\.|[^\\\\\\\\()])+)\\\\))([+*?])?|(\\\\*))&#39;\n].join(&#39;|&#39;), &#39;g&#39;)\n\n/**\n * Parse a string for the raw tokens.\n *\n * @param  {string}  str\n * @param  {Object=} options\n * @return {!Array}\n */\nfunction parse (str, options) {\n  var tokens = []\n  var key = 0\n  var index = 0\n  var path = &#39;&#39;\n  var defaultDelimiter = options &amp;&amp; options.delimiter || &#39;/&#39;\n  var res\n\n  while ((res = PATH_REGEXP.exec(str)) != null) {\n    var m = res[0]\n    var escaped = res[1]\n    var offset = res.index\n    path += str.slice(index, offset)\n    index = offset + m.length\n\n    // Ignore already escaped sequences.\n    if (escaped) {\n      path += escaped[1]\n      continue\n    }\n\n    var next = str[index]\n    var prefix = res[2]\n    var name = res[3]\n    var capture = res[4]\n    var group = res[5]\n    var modifier = res[6]\n    var asterisk = res[7]\n\n    // Push the current path onto the tokens.\n    if (path) {\n      tokens.push(path)\n      path = &#39;&#39;\n    }\n\n    var partial = prefix != null &amp;&amp; next != null &amp;&amp; next !== prefix\n    var repeat = modifier === &#39;+&#39; || modifier === &#39;*&#39;\n    var optional = modifier === &#39;?&#39; || modifier === &#39;*&#39;\n    var delimiter = res[2] || defaultDelimiter\n    var pattern = capture || group\n\n    tokens.push({\n      name: name || key++,\n      prefix: prefix || &#39;&#39;,\n      delimiter: delimiter,\n      optional: optional,\n      repeat: repeat,\n      partial: partial,\n      asterisk: !!asterisk,\n      pattern: pattern ? escapeGroup(pattern) : (asterisk ? &#39;.*&#39; : &#39;[^&#39; + escapeString(delimiter) + &#39;]+?&#39;)\n    })\n  }\n\n  // Match any characters still remaining.\n  if (index &lt; str.length) {\n    path += str.substr(index)\n  }\n\n  // If the path exists, push it onto the end.\n  if (path) {\n    tokens.push(path)\n  }\n\n  return tokens\n}\n\n/**\n * Compile a string to a template function for the path.\n *\n * @param  {string}             str\n * @param  {Object=}            options\n * @return {!function(Object=, Object=)}\n */\nfunction compile (str, options) {\n  return tokensToFunction(parse(str, options))\n}\n\n/**\n * Prettier encoding of URI path segments.\n *\n * @param  {string}\n * @return {string}\n */\nfunction encodeURIComponentPretty (str) {\n  return encodeURI(str).replace(/[\\/?#]/g, function (c) {\n    return &#39;%&#39; + c.charCodeAt(0).toString(16).toUpperCase()\n  })\n}\n\n/**\n * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.\n *\n * @param  {string}\n * @return {string}\n */\nfunction encodeAsterisk (str) {\n  return encodeURI(str).replace(/[?#]/g, function (c) {\n    return &#39;%&#39; + c.charCodeAt(0).toString(16).toUpperCase()\n  })\n}\n\n/**\n * Expose a method for transforming tokens into the path function.\n */\nfunction tokensToFunction (tokens) {\n  // Compile all the tokens into regexps.\n  var matches = new Array(tokens.length)\n\n  // Compile all the patterns before compilation.\n  for (var i = 0; i &lt; tokens.length; i++) {\n    if (typeof tokens[i] === &#39;object&#39;) {\n      matches[i] = new RegExp(&#39;^(?:&#39; + tokens[i].pattern + &#39;)$&#39;)\n    }\n  }\n\n  return function (obj, opts) {\n    var path = &#39;&#39;\n    var data = obj || {}\n    var options = opts || {}\n    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent\n\n    for (var i = 0; i &lt; tokens.length; i++) {\n      var token = tokens[i]\n\n      if (typeof token === &#39;string&#39;) {\n        path += token\n\n        continue\n      }\n\n      var value = data[token.name]\n      var segment\n\n      if (value == null) {\n        if (token.optional) {\n          // Prepend partial segment prefixes.\n          if (token.partial) {\n            path += token.prefix\n          }\n\n          continue\n        } else {\n          throw new TypeError(&#39;Expected \&quot;&#39; + token.name + &#39;\&quot; to be defined&#39;)\n        }\n      }\n\n      if (isarray(value)) {\n        if (!token.repeat) {\n          throw new TypeError(&#39;Expected \&quot;&#39; + token.name + &#39;\&quot; to not repeat, but received `&#39; + JSON.stringify(value) + &#39;`&#39;)\n        }\n\n        if (value.length === 0) {\n          if (token.optional) {\n            continue\n          } else {\n            throw new TypeError(&#39;Expected \&quot;&#39; + token.name + &#39;\&quot; to not be empty&#39;)\n          }\n        }\n\n        for (var j = 0; j &lt; value.length; j++) {\n          segment = encode(value[j])\n\n          if (!matches[i].test(segment)) {\n            throw new TypeError(&#39;Expected all \&quot;&#39; + token.name + &#39;\&quot; to match \&quot;&#39; + token.pattern + &#39;\&quot;, but received `&#39; + JSON.stringify(segment) + &#39;`&#39;)\n          }\n\n          path += (j === 0 ? token.prefix : token.delimiter) + segment\n        }\n\n        continue\n      }\n\n      segment = token.asterisk ? encodeAsterisk(value) : encode(value)\n\n      if (!matches[i].test(segment)) {\n        throw new TypeError(&#39;Expected \&quot;&#39; + token.name + &#39;\&quot; to match \&quot;&#39; + token.pattern + &#39;\&quot;, but received \&quot;&#39; + segment + &#39;\&quot;&#39;)\n      }\n\n      path += token.prefix + segment\n    }\n\n    return path\n  }\n}\n\n/**\n * Escape a regular expression string.\n *\n * @param  {string} str\n * @return {string}\n */\nfunction escapeString (str) {\n  return str.replace(/([.+*?=^!:${}()[\\]|\\/\\\\])/g, &#39;\\\\$1&#39;)\n}\n\n/**\n * Escape the capturing group by escaping special characters and meaning.\n *\n * @param  {string} group\n * @return {string}\n */\nfunction escapeGroup (group) {\n  return group.replace(/([=!:$\\/()])/g, &#39;\\\\$1&#39;)\n}\n\n/**\n * Attach the keys as a property of the regexp.\n *\n * @param  {!RegExp} re\n * @param  {Array}   keys\n * @return {!RegExp}\n */\nfunction attachKeys (re, keys) {\n  re.keys = keys\n  return re\n}\n\n/**\n * Get the flags for a regexp from the options.\n *\n * @param  {Object} options\n * @return {string}\n */\nfunction flags (options) {\n  return options.sensitive ? &#39;&#39; : &#39;i&#39;\n}\n\n/**\n * Pull out keys from a regexp.\n *\n * @param  {!RegExp} path\n * @param  {!Array}  keys\n * @return {!RegExp}\n */\nfunction regexpToRegexp (path, keys) {\n  // Use a negative lookahead to match only capturing groups.\n  var groups = path.source.match(/\\((?!\\?)/g)\n\n  if (groups) {\n    for (var i = 0; i &lt; groups.length; i++) {\n      keys.push({\n        name: i,\n        prefix: null,\n        delimiter: null,\n        optional: false,\n        repeat: false,\n        partial: false,\n        asterisk: false,\n        pattern: null\n      })\n    }\n  }\n\n  return attachKeys(path, keys)\n}\n\n/**\n * Transform an array into a regexp.\n *\n * @param  {!Array}  path\n * @param  {Array}   keys\n * @param  {!Object} options\n * @return {!RegExp}\n */\nfunction arrayToRegexp (path, keys, options) {\n  var parts = []\n\n  for (var i = 0; i &lt; path.length; i++) {\n    parts.push(pathToRegexp(path[i], keys, options).source)\n  }\n\n  var regexp = new RegExp(&#39;(?:&#39; + parts.join(&#39;|&#39;) + &#39;)&#39;, flags(options))\n\n  return attachKeys(regexp, keys)\n}\n\n/**\n * Create a path regexp from string input.\n *\n * @param  {string}  path\n * @param  {!Array}  keys\n * @param  {!Object} options\n * @return {!RegExp}\n */\nfunction stringToRegexp (path, keys, options) {\n  return tokensToRegExp(parse(path, options), keys, options)\n}\n\n/**\n * Expose a function for taking tokens and returning a RegExp.\n *\n * @param  {!Array}          tokens\n * @param  {(Array|Object)=} keys\n * @param  {Object=}         options\n * @return {!RegExp}\n */\nfunction tokensToRegExp (tokens, keys, options) {\n  if (!isarray(keys)) {\n    options = /** @type {!Object} */ (keys || options)\n    keys = []\n  }\n\n  options = options || {}\n\n  var strict = options.strict\n  var end = options.end !== false\n  var route = &#39;&#39;\n\n  // Iterate over the tokens and create our regexp string.\n  for (var i = 0; i &lt; tokens.length; i++) {\n    var token = tokens[i]\n\n    if (typeof token === &#39;string&#39;) {\n      route += escapeString(token)\n    } else {\n      var prefix = escapeString(token.prefix)\n      var capture = &#39;(?:&#39; + token.pattern + &#39;)&#39;\n\n      keys.push(token)\n\n      if (token.repeat) {\n        capture += &#39;(?:&#39; + prefix + capture + &#39;)*&#39;\n      }\n\n      if (token.optional) {\n        if (!token.partial) {\n          capture = &#39;(?:&#39; + prefix + &#39;(&#39; + capture + &#39;))?&#39;\n        } else {\n          capture = prefix + &#39;(&#39; + capture + &#39;)?&#39;\n        }\n      } else {\n        capture = prefix + &#39;(&#39; + capture + &#39;)&#39;\n      }\n\n      route += capture\n    }\n  }\n\n  var delimiter = escapeString(options.delimiter || &#39;/&#39;)\n  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter\n\n  // In non-strict mode we allow a slash at the end of match. If the path to\n  // match already ends with a slash, we remove it for consistency. The slash\n  // is valid at the end of a path match, not in the middle. This is important\n  // in non-ending mode, where \&quot;/test/\&quot; shouldn&#39;t match \&quot;/test//route\&quot;.\n  if (!strict) {\n    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + &#39;(?:&#39; + delimiter + &#39;(?=$))?&#39;\n  }\n\n  if (end) {\n    route += &#39;$&#39;\n  } else {\n    // In non-ending mode, we need the capturing groups to match as much as\n    // possible by using a positive lookahead to the end or next path segment.\n    route += strict &amp;&amp; endsWithDelimiter ? &#39;&#39; : &#39;(?=&#39; + delimiter + &#39;|$)&#39;\n  }\n\n  return attachKeys(new RegExp(&#39;^&#39; + route, flags(options)), keys)\n}\n\n/**\n * Normalize the given path string, returning a regular expression.\n *\n * An empty array can be passed in for the keys, which will hold the\n * placeholder key descriptions. For example, using `/user/:id`, `keys` will\n * contain `[{ name: &#39;id&#39;, delimiter: &#39;/&#39;, optional: false, repeat: false }]`.\n *\n * @param  {(string|RegExp|Array)} path\n * @param  {(Array|Object)=}       keys\n * @param  {Object=}               options\n * @return {!RegExp}\n */\nfunction pathToRegexp (path, keys, options) {\n  if (!isarray(keys)) {\n    options = /** @type {!Object} */ (keys || options)\n    keys = []\n  }\n\n  options = options || {}\n\n  if (path instanceof RegExp) {\n    return regexpToRegexp(path, /** @type {!Array} */ (keys))\n  }\n\n  if (isarray(path)) {\n    return arrayToRegexp(/** @type {!Array} */ (path), /** @type {!Array} */ (keys), options)\n  }\n\n  return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)\n}\n&quot;,&quot;/**\n * Copyright 2015 Google Inc. All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;);\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n *\n */\n\n(function() {\n  var nativeAddAll = Cache.prototype.addAll;\n  var userAgent = navigator.userAgent.match(/(Firefox|Chrome)\\/(\\d+\\.)/);\n\n  // Has nice behavior of `var` which everyone hates\n  if (userAgent) {\n    var agent = userAgent[1];\n    var version = parseInt(userAgent[2]);\n  }\n\n  if (\n    nativeAddAll &amp;&amp; (!userAgent ||\n      (agent === &#39;Firefox&#39; &amp;&amp; version &gt;= 46) ||\n      (agent === &#39;Chrome&#39;  &amp;&amp; version &gt;= 50)\n    )\n  ) {\n    return;\n  }\n\n  Cache.prototype.addAll = function addAll(requests) {\n    var cache = this;\n\n    // Since DOMExceptions are not constructable:\n    function NetworkError(message) {\n      this.name = &#39;NetworkError&#39;;\n      this.code = 19;\n      this.message = message;\n    }\n\n    NetworkError.prototype = Object.create(Error.prototype);\n\n    return Promise.resolve().then(function() {\n      if (arguments.length &lt; 1) throw new TypeError();\n\n      // Simulate sequence&lt;(Request or USVString)&gt; binding:\n      var sequence = [];\n\n      requests = requests.map(function(request) {\n        if (request instanceof Request) {\n          return request;\n        }\n        else {\n          return String(request); // may throw TypeError\n        }\n      });\n\n      return Promise.all(\n        requests.map(function(request) {\n          if (typeof request === &#39;string&#39;) {\n            request = new Request(request);\n          }\n\n          var scheme = new URL(request.url).protocol;\n\n          if (scheme !== &#39;http:&#39; &amp;&amp; scheme !== &#39;https:&#39;) {\n            throw new NetworkError(\&quot;Invalid scheme\&quot;);\n          }\n\n          return fetch(request.clone());\n        })\n      );\n    }).then(function(responses) {\n      // If some of the responses has not OK-eish status,\n      // then whole operation should reject\n      if (responses.some(function(response) {\n        return !response.ok;\n      })) {\n        throw new NetworkError(&#39;Incorrect response status&#39;);\n      }\n\n      // TODO: check that requests don&#39;t overwrite one another\n      // (don&#39;t think this is possible to polyfill due to opaque responses)\n      return Promise.all(\n        responses.map(function(response, i) {\n          return cache.put(requests[i], response);\n        })\n      );\n    }).then(function() {\n      return undefined;\n    });\n  };\n\n  Cache.prototype.add = function add(request) {\n    return this.addAll([request]);\n  };\n}());&quot;]}</td>
+      </tr>
+</table>
+
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg aria-hidden="true" class="octicon octicon-kebab-horizontal" height="16" version="1.1" viewBox="0 0 13 16" width="13"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
+        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
+        <li><a href="/GoogleChromeLabs/sw-toolbox/blame/2fb9a52cefd47cac6902ec5bb20fd4b0aafc3bc4/sw-toolbox.js.map" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+          <li><a href="/GoogleChromeLabs/sw-toolbox/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2017 <span title="0.18291s from unicorn-3620270593-2q9d0">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-9q/K6slxE4/td77zWhLvrJgs8Q9tNBkJErcweUbxTIs=" src="https://assets-cdn.github.com/assets/frameworks-f6afcaeac971138fed77bef35a12efac982cf10f6d34190912b7307946f14c8b.js"></script>
+    
+    <script async="async" crossorigin="anonymous" integrity="sha256-crNKkJpMXZyvhzYHuYbBOUcEeNIaX5gqmv3rj9UvVwg=" src="https://assets-cdn.github.com/assets/github-72b34a909a4c5d9caf873607b986c139470478d21a5f982a9afdeb8fd52f5708.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
