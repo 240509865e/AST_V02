@@ -1,7 +1,11 @@
-importScripts("sw-toolbox.js");
+'use strict';
 
-toolbox.precache(["index.html","assets/*"]);
+importScripts('sw-toolbox.js');
 
-toolbox.router.get("/images/*", toolbox.cacheFirst);
+toolbox.precache(["index.html","style/style.css"]);
 
-toolbox.router.get("/*", toolbox.networkFirst, {  networkTimeoutSeconds: 5});
+toolbox.router.get('/images/*', toolbox.cacheFirst);
+
+toolbox.router.get('/*', toolbox.networkFirst, {
+  networkTimeoutSeconds: 5
+});
