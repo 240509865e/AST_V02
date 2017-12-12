@@ -1,11 +1,19 @@
 {
-  "name": "ALPHA SPORT TECH",
-  "short_name": "Catalogue AST",
-  "lang": "ru",
-  "start_url": "/",
-  "display": "fullscreen",
-  "theme_color": "#E6E6FA",
-  "icons": [
+  "name": "Web Community Leaders UK IE",
+    "short_name": "Web Leaders",
+    "description": "Web Community Leaders landing page",
+    "lang": "en-GB",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#E6E6FA",
+    "background_color": "#E6E6FA",
+
+ "icons": [
+   {
+     "src":"\/icons/wcls-logo-512.png",
+     "sizes": "512x512",
+     "type": "image\/png"
+   },
   {
    "src": "\/icons/android-icon-36x36.png",
    "sizes": "36x36",
